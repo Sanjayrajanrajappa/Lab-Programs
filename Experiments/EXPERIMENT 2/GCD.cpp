@@ -18,5 +18,6 @@ int main()
         }
     }
     cout<<"The GCD is = "<<gcd;
-    cout<<"\nDone By Sanjay Rajan R";
+    cout<<"\nDone By SANJAY RAJAN R CSE D";
+    cout<<"\nREG NO. 23CS210";
 }   
