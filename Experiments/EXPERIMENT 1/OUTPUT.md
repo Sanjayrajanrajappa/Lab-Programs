@@ -1,1 +1,3 @@
-![Output](C:\Users\DELL\OneDrive\Desktop\HALF.png)
+# Output:
+
+(C:\Users\DELL\OneDrive\Desktop\HALF.png)
