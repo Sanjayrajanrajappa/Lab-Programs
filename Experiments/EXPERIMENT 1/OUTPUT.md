@@ -1,3 +1,3 @@
 # Output:
 
-(C:\Users\DELL\OneDrive\Desktop\HALF.png)
+![dff](C:\Users\DELL\OneDrive\Desktop\HALF.png)
