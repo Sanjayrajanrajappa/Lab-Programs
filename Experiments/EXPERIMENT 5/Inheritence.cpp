@@ -1,27 +1,31 @@
 #include <iostream> 
-#include <string> 
-using namespace std; 
-class Person
+class Shape 
 { 
-private: 
-    string name; 
-    int age; 
-    public: 
-        Person(const std::string& n, int a) : name(n), age(a) {} 
-        Person(const Person& other) : name(other.name), age(other.age) {} 
-        void display() { 
-            std::cout<<"Name: "<<name<<", Age: "<<age<<std::endl; 
-        } 
+public: 
+    void setDimensions(double length, double width) { 
+    length_ = length; 
+    width_ = width; 
+    } 
+    virtual double calculateArea() { 
+    return length_ * width_; 
+    } 
+protected: 
+    double length_; 
+    double width_; 
 }; 
+class Rectangle : public Shape 
+{ 
+public: 
+    double calculateArea() override { 
+    return length_ * width_; // Same as base class for demonstration 
+    } 
+};  
 int main() 
 { 
-    Person person1("Alice", 30); 
-    Person person2 = person1;
-    std::cout<<"Person 1: "; 
-    person1.display(); 
-    std::cout<<"Person 2: "; 
-    person2.display();
-    cout<<"\nDone By SANJAY RAJAN R CSE D";
-    cout<<"\nREG NO. 23CS210";
+    Rectangle rectangle; 
+    rectangle.setDimensions(15.0, 24.0); 
+    std::cout << "Area of Rectangle: " << rectangle.calculateArea() << std::endl;
+    std::cout<<"\nDone By SANJAY RAJAN R CSE D";
+    std::cout<<"\nREG NO. 23CS210"; 
     return 0; 
 } 
