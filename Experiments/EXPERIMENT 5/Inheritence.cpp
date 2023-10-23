@@ -17,14 +17,14 @@ class Rectangle : public Shape
 { 
 public: 
     double calculateArea() override { 
-    return length_ * width_; // Same as base class for demonstration 
+    return length_ * width_; 
     } 
 };  
 int main() 
 { 
     Rectangle rectangle; 
     rectangle.setDimensions(15.0, 24.0); 
-    std::cout << "Area of Rectangle: " << rectangle.calculateArea() << std::endl;
+    std::cout<<"Area of Rectangle: "<<rectangle.calculateArea()<<std::endl;
     std::cout<<"\nDone By SANJAY RAJAN R CSE D";
     std::cout<<"\nREG NO. 23CS210"; 
     return 0; 
