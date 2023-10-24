@@ -1,30 +1,34 @@
-#include <iostream> 
+#include <iostream>
+const double half = 0.5;
 class Shape 
 { 
-public: 
+public:
+    
     void setDimensions(double length, double width) { 
     length_ = length; 
-    width_ = width; 
+    width_ = width;
+    half_ = half; 
     } 
     virtual double calculateArea() { 
-    return length_ * width_; 
+    return half_ * length_ * width_; 
     } 
 protected: 
     double length_; 
-    double width_; 
+    double width_;
+    double half_;
 }; 
-class Rectangle : public Shape 
+class Triangle : public Shape 
 { 
 public: 
     double calculateArea() override { 
-    return length_ * width_; 
+    return half_ * length_ * width_; 
     } 
 };  
 int main() 
 { 
-    Rectangle rectangle; 
-    rectangle.setDimensions(15.0, 24.0); 
-    std::cout<<"Area of Rectangle: "<<rectangle.calculateArea()<<std::endl;
+Triangle triangle; 
+    triangle.setDimensions(15.0, 24.0); 
+    std::cout<<"Area of Triangle: "<<triangle.calculateArea()<<std::endl;
     std::cout<<"\nDone By SANJAY RAJAN R CSE D";
     std::cout<<"\nREG NO. 23CS210"; 
     return 0; 
